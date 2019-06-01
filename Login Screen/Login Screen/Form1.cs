@@ -26,17 +26,30 @@ namespace Login_Screen
         {
             UserNameTextBox.Clear();
             UserNameTextBox.ForeColor = Color.Black;
+            if (UserNameTextBox.Text == "")
+            {
+                PassWordTextBox.ForeColor = Color.Gray;
+                PassWordTextBox.Text = "Enter User Name Here";
+            }
+
         }
 
         private void textBox2_Click(object sender, EventArgs e)
         {
+            
             PassWordTextBox.Clear();
             PassWordTextBox.ForeColor = Color.Black;
+            if (UserNameTextBox.Text == "")
+            {
+                UserNameTextBox.ForeColor = Color.Gray;
+                UserNameTextBox.Text = "Enter User Name Here";
+            }
         }
 
         private void linkLabel2_Click(object sender, EventArgs e)
         {
-
+            SignUp signUp = new SignUp();
+            signUp.Show();
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
@@ -57,6 +70,8 @@ namespace Login_Screen
             {
                 InvalidTextPanel.Visible = true;
             }
+            
+
         }
 
         private void InvalidOKbutton_Click(object sender, EventArgs e)
@@ -116,22 +131,22 @@ namespace Login_Screen
 
         private void button1_MouseEnter(object sender, EventArgs e)
         {
-            button1.BackColor = Color.DarkGoldenrod;
+            EatSomeWhereElseButtonGuestButton.BackColor = Color.DarkGoldenrod;
         }
 
         private void button1_MouseLeave(object sender, EventArgs e)
         {
-            button1.BackColor = Color.Goldenrod;
+            EatSomeWhereElseButtonGuestButton.BackColor = Color.Goldenrod;
         }
 
         private void button4_MouseEnter(object sender, EventArgs e)
         {
-            button4.BackColor = Color.DarkGoldenrod;
+            EatInsideButton.BackColor = Color.DarkGoldenrod;
         }
 
         private void button4_MouseLeave(object sender, EventArgs e)
         {
-            button4.BackColor = Color.Goldenrod;
+            EatInsideButton.BackColor = Color.Goldenrod;
         }
 
         private void EatSomeWhereElseButton_MouseEnter(object sender, EventArgs e)
@@ -212,6 +227,75 @@ namespace Login_Screen
         private void VIPorderFromMenuButton_MouseLeave(object sender, EventArgs e)
         {
             VIPorderFromMenuButton.BackColor = Color.Goldenrod;
+        }
+
+        private void GuestLocationPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void GuestLocationPanel_Click(object sender, EventArgs e)
+        {
+            if (UserNameTextBox.Text == "")
+            {
+                UserNameTextBox.ForeColor = Color.Gray;
+                UserNameTextBox.Text = "Enter User Name Here";
+            }
+            if (PassWordTextBox.Text == "")
+            {
+                PassWordTextBox.ForeColor = Color.Gray;
+                PassWordTextBox.Text = "Enter User Name Here";
+            }
+        }
+
+        private void LoginScreen_Click(object sender, EventArgs e)
+        {
+            if (UserNameTextBox.Text == "")
+            {
+                UserNameTextBox.ForeColor = Color.Gray;
+                UserNameTextBox.Text = "Enter User Name Here";
+            }
+            if (PassWordTextBox.Text == "")
+            {
+                PassWordTextBox.ForeColor = Color.Gray;
+                PassWordTextBox.Text = "Enter User Name Here";
+            }
+        }
+
+        private void GuestSignUpLabal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignUpLabel_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void SignInGuestLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignUpLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+        }
+
+        private void GuestSignUpLabal_Click(object sender, EventArgs e)
+        {
+            SignUp sign = new SignUp();
+            sign.Show();
         }
     }
 }

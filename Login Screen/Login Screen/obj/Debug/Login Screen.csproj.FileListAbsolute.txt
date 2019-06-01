@@ -18,3 +18,4 @@ C:\Users\User\Desktop\MAIN project\Login Screen\Login Screen\obj\Debug\Login Scr
 C:\Users\User\Desktop\MAIN project\Login Screen\Login Screen\obj\Debug\Login Screen.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\MAIN project\Login Screen\Login Screen\obj\Debug\Login Screen.exe
 C:\Users\User\Desktop\MAIN project\Login Screen\Login Screen\obj\Debug\Login Screen.pdb
+C:\Users\User\Desktop\MAIN project\Login Screen\Login Screen\obj\Debug\Login_Screen.SignUp.resources

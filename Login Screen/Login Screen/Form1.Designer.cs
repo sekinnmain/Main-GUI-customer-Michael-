@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.SignInGuestLabel = new System.Windows.Forms.Label();
             this.LoginButton = new System.Windows.Forms.Button();
             this.UserNameTextBox = new System.Windows.Forms.TextBox();
             this.PassWordTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.UserNamelbl = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.ForogotPasswordLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.SignUpLabel = new System.Windows.Forms.LinkLabel();
+            this.EnterAsGuestLinkLabel = new System.Windows.Forms.LinkLabel();
             this.VipPanel = new System.Windows.Forms.Panel();
             this.VipChooseLocationPanel = new System.Windows.Forms.Panel();
             this.ReturnButton = new System.Windows.Forms.Button();
@@ -47,15 +47,15 @@
             this.PointShopButton = new System.Windows.Forms.Button();
             this.VIPorderFromMenuButton = new System.Windows.Forms.Button();
             this.GamesButton = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.WelcomeVipCustomerLabel = new System.Windows.Forms.Label();
             this.InvalidTextPanel = new System.Windows.Forms.Panel();
             this.InvalidOKbutton = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.GuestPanel = new System.Windows.Forms.Panel();
             this.GuestLocationPanel = new System.Windows.Forms.Panel();
             this.GuestRetrunButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.EatSomeWhereElseButtonGuestButton = new System.Windows.Forms.Button();
+            this.EatInsideButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.GuestSignUpLabal = new System.Windows.Forms.LinkLabel();
             this.SignInLabel = new System.Windows.Forms.LinkLabel();
@@ -68,23 +68,24 @@
             this.GuestLocationPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // SignInGuestLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palace Script MT", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label1.Location = new System.Drawing.Point(287, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 89);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Sign In";
+            this.SignInGuestLabel.AutoSize = true;
+            this.SignInGuestLabel.Font = new System.Drawing.Font("Palace Script MT", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignInGuestLabel.ForeColor = System.Drawing.Color.Goldenrod;
+            this.SignInGuestLabel.Location = new System.Drawing.Point(556, 18);
+            this.SignInGuestLabel.Name = "SignInGuestLabel";
+            this.SignInGuestLabel.Size = new System.Drawing.Size(252, 89);
+            this.SignInGuestLabel.TabIndex = 0;
+            this.SignInGuestLabel.Text = "Sign In";
+            this.SignInGuestLabel.Click += new System.EventHandler(this.SignInGuestLabel_Click);
             // 
             // LoginButton
             // 
             this.LoginButton.BackColor = System.Drawing.Color.Goldenrod;
             this.LoginButton.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginButton.ForeColor = System.Drawing.Color.Black;
-            this.LoginButton.Location = new System.Drawing.Point(391, 240);
+            this.LoginButton.Location = new System.Drawing.Point(592, 324);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(110, 23);
             this.LoginButton.TabIndex = 1;
@@ -96,8 +97,8 @@
             // 
             // UserNameTextBox
             // 
-            this.UserNameTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.UserNameTextBox.Location = new System.Drawing.Point(360, 120);
+            this.UserNameTextBox.ForeColor = System.Drawing.Color.Gray;
+            this.UserNameTextBox.Location = new System.Drawing.Point(592, 155);
             this.UserNameTextBox.Name = "UserNameTextBox";
             this.UserNameTextBox.Size = new System.Drawing.Size(170, 20);
             this.UserNameTextBox.TabIndex = 2;
@@ -107,67 +108,68 @@
             // 
             // PassWordTextBox
             // 
-            this.PassWordTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.PassWordTextBox.Location = new System.Drawing.Point(360, 158);
+            this.PassWordTextBox.ForeColor = System.Drawing.Color.Gray;
+            this.PassWordTextBox.Location = new System.Drawing.Point(592, 207);
             this.PassWordTextBox.Name = "PassWordTextBox";
             this.PassWordTextBox.Size = new System.Drawing.Size(170, 20);
             this.PassWordTextBox.TabIndex = 3;
             this.PassWordTextBox.Text = "Enter Pass Word Here";
             this.PassWordTextBox.Click += new System.EventHandler(this.textBox2_Click);
             // 
-            // label2
+            // UserNamelbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label2.Location = new System.Drawing.Point(279, 121);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "User Name";
+            this.UserNamelbl.AutoSize = true;
+            this.UserNamelbl.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNamelbl.ForeColor = System.Drawing.Color.Goldenrod;
+            this.UserNamelbl.Location = new System.Drawing.Point(486, 155);
+            this.UserNamelbl.Name = "UserNamelbl";
+            this.UserNamelbl.Size = new System.Drawing.Size(79, 17);
+            this.UserNamelbl.TabIndex = 4;
+            this.UserNamelbl.Text = "User Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label3.Location = new System.Drawing.Point(273, 158);
+            this.label3.Location = new System.Drawing.Point(486, 207);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Pass Word";
             // 
-            // linkLabel1
+            // ForogotPasswordLinkLabel
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(357, 191);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(95, 13);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Forgot Password ?";
+            this.ForogotPasswordLinkLabel.AutoSize = true;
+            this.ForogotPasswordLinkLabel.Location = new System.Drawing.Point(589, 245);
+            this.ForogotPasswordLinkLabel.Name = "ForogotPasswordLinkLabel";
+            this.ForogotPasswordLinkLabel.Size = new System.Drawing.Size(95, 13);
+            this.ForogotPasswordLinkLabel.TabIndex = 6;
+            this.ForogotPasswordLinkLabel.TabStop = true;
+            this.ForogotPasswordLinkLabel.Text = "Forgot Password ?";
             // 
-            // linkLabel2
+            // SignUpLabel
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(733, 9);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(45, 13);
-            this.linkLabel2.TabIndex = 7;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Sign Up";
-            this.linkLabel2.Click += new System.EventHandler(this.linkLabel2_Click);
+            this.SignUpLabel.AutoSize = true;
+            this.SignUpLabel.Location = new System.Drawing.Point(1242, 39);
+            this.SignUpLabel.Name = "SignUpLabel";
+            this.SignUpLabel.Size = new System.Drawing.Size(45, 13);
+            this.SignUpLabel.TabIndex = 7;
+            this.SignUpLabel.TabStop = true;
+            this.SignUpLabel.Text = "Sign Up";
+            this.SignUpLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SignUpLabel_LinkClicked);
+            this.SignUpLabel.Click += new System.EventHandler(this.linkLabel2_Click);
             // 
-            // linkLabel3
+            // EnterAsGuestLinkLabel
             // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(357, 214);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(75, 13);
-            this.linkLabel3.TabIndex = 8;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Enter as guest";
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            this.EnterAsGuestLinkLabel.AutoSize = true;
+            this.EnterAsGuestLinkLabel.Location = new System.Drawing.Point(589, 276);
+            this.EnterAsGuestLinkLabel.Name = "EnterAsGuestLinkLabel";
+            this.EnterAsGuestLinkLabel.Size = new System.Drawing.Size(75, 13);
+            this.EnterAsGuestLinkLabel.TabIndex = 8;
+            this.EnterAsGuestLinkLabel.TabStop = true;
+            this.EnterAsGuestLinkLabel.Text = "Enter as guest";
+            this.EnterAsGuestLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // VipPanel
             // 
@@ -177,7 +179,7 @@
             this.VipPanel.Controls.Add(this.PointShopButton);
             this.VipPanel.Controls.Add(this.VIPorderFromMenuButton);
             this.VipPanel.Controls.Add(this.GamesButton);
-            this.VipPanel.Controls.Add(this.label4);
+            this.VipPanel.Controls.Add(this.WelcomeVipCustomerLabel);
             this.VipPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VipPanel.Location = new System.Drawing.Point(0, 0);
             this.VipPanel.Name = "VipPanel";
@@ -301,25 +303,25 @@
             this.GamesButton.MouseEnter += new System.EventHandler(this.GamesButton_MouseEnter);
             this.GamesButton.MouseLeave += new System.EventHandler(this.GamesButton_MouseLeave);
             // 
-            // label4
+            // WelcomeVipCustomerLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Palace Script MT", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label4.Location = new System.Drawing.Point(474, 92);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(598, 89);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Welcome VIP Customer";
+            this.WelcomeVipCustomerLabel.AutoSize = true;
+            this.WelcomeVipCustomerLabel.Font = new System.Drawing.Font("Palace Script MT", 72F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WelcomeVipCustomerLabel.ForeColor = System.Drawing.Color.Goldenrod;
+            this.WelcomeVipCustomerLabel.Location = new System.Drawing.Point(474, 92);
+            this.WelcomeVipCustomerLabel.Name = "WelcomeVipCustomerLabel";
+            this.WelcomeVipCustomerLabel.Size = new System.Drawing.Size(598, 89);
+            this.WelcomeVipCustomerLabel.TabIndex = 0;
+            this.WelcomeVipCustomerLabel.Text = "Welcome VIP Customer";
             // 
             // InvalidTextPanel
             // 
             this.InvalidTextPanel.BackColor = System.Drawing.Color.White;
             this.InvalidTextPanel.Controls.Add(this.InvalidOKbutton);
             this.InvalidTextPanel.Controls.Add(this.richTextBox1);
-            this.InvalidTextPanel.Location = new System.Drawing.Point(46, 104);
+            this.InvalidTextPanel.Location = new System.Drawing.Point(736, 245);
             this.InvalidTextPanel.Name = "InvalidTextPanel";
-            this.InvalidTextPanel.Size = new System.Drawing.Size(200, 112);
+            this.InvalidTextPanel.Size = new System.Drawing.Size(220, 113);
             this.InvalidTextPanel.TabIndex = 10;
             this.InvalidTextPanel.Visible = false;
             // 
@@ -335,7 +337,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 4);
+            this.richTextBox1.Location = new System.Drawing.Point(26, 6);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(170, 48);
             this.richTextBox1.TabIndex = 0;
@@ -357,9 +359,10 @@
             // 
             // GuestLocationPanel
             // 
+            this.GuestLocationPanel.CausesValidation = false;
+            this.GuestLocationPanel.Controls.Add(this.EatInsideButton);
             this.GuestLocationPanel.Controls.Add(this.GuestRetrunButton);
-            this.GuestLocationPanel.Controls.Add(this.button1);
-            this.GuestLocationPanel.Controls.Add(this.button4);
+            this.GuestLocationPanel.Controls.Add(this.EatSomeWhereElseButtonGuestButton);
             this.GuestLocationPanel.Controls.Add(this.label6);
             this.GuestLocationPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GuestLocationPanel.Location = new System.Drawing.Point(0, 0);
@@ -367,6 +370,8 @@
             this.GuestLocationPanel.Size = new System.Drawing.Size(1370, 749);
             this.GuestLocationPanel.TabIndex = 5;
             this.GuestLocationPanel.Visible = false;
+            this.GuestLocationPanel.Click += new System.EventHandler(this.GuestLocationPanel_Click);
+            this.GuestLocationPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.GuestLocationPanel_Paint);
             // 
             // GuestRetrunButton
             // 
@@ -382,31 +387,31 @@
             this.GuestRetrunButton.MouseEnter += new System.EventHandler(this.GuestRetrunButton_MouseEnter);
             this.GuestRetrunButton.MouseLeave += new System.EventHandler(this.GuestRetrunButton_MouseLeave);
             // 
-            // button1
+            // EatSomeWhereElseButtonGuestButton
             // 
-            this.button1.BackColor = System.Drawing.Color.Goldenrod;
-            this.button1.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(147, 230);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1152, 54);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "I want to eat somewhere else";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
-            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.EatSomeWhereElseButtonGuestButton.BackColor = System.Drawing.Color.Goldenrod;
+            this.EatSomeWhereElseButtonGuestButton.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EatSomeWhereElseButtonGuestButton.Location = new System.Drawing.Point(147, 230);
+            this.EatSomeWhereElseButtonGuestButton.Name = "EatSomeWhereElseButtonGuestButton";
+            this.EatSomeWhereElseButtonGuestButton.Size = new System.Drawing.Size(1152, 54);
+            this.EatSomeWhereElseButtonGuestButton.TabIndex = 4;
+            this.EatSomeWhereElseButtonGuestButton.Text = "I want to eat somewhere else";
+            this.EatSomeWhereElseButtonGuestButton.UseVisualStyleBackColor = false;
+            this.EatSomeWhereElseButtonGuestButton.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
+            this.EatSomeWhereElseButtonGuestButton.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             // 
-            // button4
+            // EatInsideButton
             // 
-            this.button4.BackColor = System.Drawing.Color.Goldenrod;
-            this.button4.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(147, 124);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(1152, 54);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "I want to eat inside the restaurant";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
-            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
+            this.EatInsideButton.BackColor = System.Drawing.Color.Goldenrod;
+            this.EatInsideButton.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EatInsideButton.Location = new System.Drawing.Point(147, 124);
+            this.EatInsideButton.Name = "EatInsideButton";
+            this.EatInsideButton.Size = new System.Drawing.Size(1152, 54);
+            this.EatInsideButton.TabIndex = 5;
+            this.EatInsideButton.Text = "I want to eat inside the restaurant";
+            this.EatInsideButton.UseVisualStyleBackColor = false;
+            this.EatInsideButton.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
+            this.EatInsideButton.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
             // 
             // label6
             // 
@@ -429,6 +434,8 @@
             this.GuestSignUpLabal.TabIndex = 9;
             this.GuestSignUpLabal.TabStop = true;
             this.GuestSignUpLabal.Text = "Sign Up";
+            this.GuestSignUpLabal.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GuestSignUpLabal_LinkClicked);
+            this.GuestSignUpLabal.Click += new System.EventHandler(this.GuestSignUpLabal_Click);
             // 
             // SignInLabel
             // 
@@ -476,18 +483,19 @@
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.GuestPanel);
             this.Controls.Add(this.VipPanel);
-            this.Controls.Add(this.linkLabel3);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.EnterAsGuestLinkLabel);
+            this.Controls.Add(this.SignUpLabel);
+            this.Controls.Add(this.ForogotPasswordLinkLabel);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.UserNamelbl);
             this.Controls.Add(this.PassWordTextBox);
             this.Controls.Add(this.UserNameTextBox);
             this.Controls.Add(this.LoginButton);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.SignInGuestLabel);
             this.Controls.Add(this.InvalidTextPanel);
             this.Name = "LoginScreen";
             this.Text = "Form1";
+            this.Click += new System.EventHandler(this.LoginScreen_Click);
             this.VipPanel.ResumeLayout(false);
             this.VipPanel.PerformLayout();
             this.VipChooseLocationPanel.ResumeLayout(false);
@@ -504,15 +512,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label SignInGuestLabel;
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.TextBox UserNameTextBox;
         private System.Windows.Forms.TextBox PassWordTextBox;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label UserNamelbl;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.LinkLabel ForogotPasswordLinkLabel;
+        private System.Windows.Forms.LinkLabel SignUpLabel;
+        private System.Windows.Forms.LinkLabel EnterAsGuestLinkLabel;
         private System.Windows.Forms.Panel VipPanel;
         private System.Windows.Forms.Panel InvalidTextPanel;
         private System.Windows.Forms.Button InvalidOKbutton;
@@ -521,7 +529,7 @@
         private System.Windows.Forms.Button PointShopButton;
         private System.Windows.Forms.Button VIPorderFromMenuButton;
         private System.Windows.Forms.Button GamesButton;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label WelcomeVipCustomerLabel;
         private System.Windows.Forms.Panel VipChooseLocationPanel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button EatSomeWhereElseButton;
@@ -533,10 +541,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button GuestOrderFromMenuButton;
         private System.Windows.Forms.Panel GuestLocationPanel;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button EatSomeWhereElseButtonGuestButton;
+        private System.Windows.Forms.Button EatInsideButton;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button GuestRetrunButton;
+        private System.Windows.Forms.Label Label17;
+        private System.Windows.Forms.Label Label;
     }
 }
 
