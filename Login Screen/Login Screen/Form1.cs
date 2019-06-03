@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MAIN_GUI_Mangaer_window.ma_controller;
+using NewUsers;
+
 
 namespace Login_Screen
 {
@@ -54,7 +57,8 @@ namespace Login_Screen
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            if (UserNameTextBox.Text != "" && PassWordTextBox.Text != "")
+            bool chk = XmlLoader.CheckIfVipCustomerExist(UserNameTextBox.Text, PassWordTextBox.Text);
+            if (UserNameTextBox.Text != "" && PassWordTextBox.Text != "" && chk == true )
             {
                 if (UserNameTextBox.Text != "Enter User Name Here" && PassWordTextBox.Text != "Enter Pass Word Here")
                 {

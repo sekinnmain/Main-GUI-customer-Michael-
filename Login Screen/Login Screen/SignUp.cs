@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WriteXMLfile;
 using NewUsers;
+using MAIN_GUI_Mangaer_window.ma_controller;
+using System.Xml.Linq;
 
 
 namespace Login_Screen
@@ -44,7 +45,10 @@ namespace Login_Screen
 
         private void CheckButton1_Click(object sender, EventArgs e)
         {
-            if (RegisterUserName1TextBox.Text.Length >= 4 && RegisterUserName1TextBox.Text.Length <= 14)
+
+            bool chk = XmlLoader.CheckIfUserNameExist(RegisterUserName1TextBox.Text);
+            
+            if (RegisterUserName1TextBox.Text.Length >= 4 && RegisterUserName1TextBox.Text.Length <= 14 && chk == false )
             {
                 AviableUserNameName1.Visible = true;
                 UnAviableUserNameLabel1.Visible = false;
@@ -110,10 +114,11 @@ namespace Login_Screen
                 vip.PassWord = RegisterPassWord1TextBox.Text;
                 vip.Email = RegisterEmail1TextBox.Text + "@" + RegisterEmail1ComboBox.Text;
                 vip.adress = RegisterStreet1TextBox.Text;
-                vip.PhoneNumber = RegisterPhone1ComboBox.Text + RegisterPhone1TextBox;
-            vip.CreditCard = textBox3.Text + textBox4.Text + textBox5.Text + textBox6.Text;
-                WriteXmlFile wxf = new WriteXmlFile(vip);
-                wxf.XmlVipWrite();
+                vip.PhoneNumber = RegisterPhone1ComboBox.Text + RegisterPhone1TextBox.Text;
+                vip.CreditCard = textBox3.Text + textBox4.Text + textBox5.Text + textBox6.Text;
+
+                XmlParser.XmlParserVipCustomer(vip);
+                
                 MessageBox.Show("Succesfully Registered", "WOOHOO");
                 this.Close();
                 

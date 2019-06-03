@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VIPCustomers>
+  <VIPCustomer>
+    <FirstName></FirstName>
+    <LastName></LastName>
+    <UserName>wdwed</UserName>
+    <PassWord>wedwed</PassWord>
+    <Email>wed@wed</Email>
+    <Adress></Adress>
+    <PhoneNumber>weded</PhoneNumber>
+  </VIPCustomer>
+  <VIPCustomer>
+    <FirstName>michael</FirstName>
+    <LastName>savinetsky</LastName>
+    <UserName>michael2608</UserName>
+    <PassWord>458592686</PassWord>
+    <Email>mishael2013@hotmail.com@hotmail.com</Email>
+    <Adress>kiryat yam lehi 7</Adress>
+    <PhoneNumber>0525724810</PhoneNumber>
+    <CreditCard>4580420244606783</CreditCard>
+  </VIPCustomer>
+  <VIPCustomer>
+    <FirstName>ilan</FirstName>
+    <LastName>savinetsky</LastName>
+    <UserName>ilan2608</UserName>
+    <PassWord>1994ilan</PassWord>
+    <Email>ilan2608@gmail.com</Email>
+    <Adress>kiryat yam lehi 7</Adress>
+    <PhoneNumber>0527565007</PhoneNumber>
+    <CreditCard>4580420265481235</CreditCard>
+  </VIPCustomer>
+  <VIPCustomer>
+    <FirstName>pooky</FirstName>
+    <LastName>shmoopy</LastName>
+    <UserName>pooky</UserName>
+    <PassWord>458592686</PassWord>
+    <Email>mishael2013@walla.com</Email>
+    <Adress>hell</Adress>
+    <PhoneNumber>0545555555</PhoneNumber>
+    <CreditCard>4580420266666666</CreditCard>
+  </VIPCustomer>
+  <VIPCustomer>
+    <FirstName>esti</FirstName>
+    <LastName>kaplan</LastName>
+    <UserName>estikaplan</UserName>
+    <PassWord>estikaplan</PassWord>
+    <Email>esti@hotmail.com</Email>
+    <Adress>kiryat yam tsahal</Adress>
+    <PhoneNumber>0525555555</PhoneNumber>
+    <CreditCard>4580420245645645</CreditCard>
+  </VIPCustomer>
+</VIPCustomers>
