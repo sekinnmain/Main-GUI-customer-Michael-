@@ -38,6 +38,17 @@ namespace MAIN_GUI_Mangaer_window.ma_controller
                        
             doc.Save(xmlVipUsers);
         }
+        public static void XmlParserFeedback(Feedback passFeedback)
+        {
+            XDocument doc = XDocument.Load(xmlFeedBackPath);
+            XElement school = doc.Element("Feedbacks");
+            school.Add(new XElement("Feedback",
+                       new XElement("FeedbackComment", passFeedback.FeedbackComment),
+                       new XElement("RatedFeedback", passFeedback.RatedFeedback)
+                       ));
+
+            doc.Save(xmlFeedBackPath);
+        }
 
 
     }
